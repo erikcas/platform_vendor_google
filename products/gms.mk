@@ -10,6 +10,11 @@ PRODUCT_COPY_FILES +=  \
 
 endif
 
+# Chromium Prebuilt
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
+
 include vendor/google/32bit/32bit.mk
 include vendor/google/64bit/64bit.mk
 
