@@ -9,3 +9,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/google/prebuilt/common/bootanimation/480/bootanimation.zip:system/media/bootanimation.zip
 
 endif
+
+include vendor/google/32bit/32bit.mk
+include vendor/google/64bit/64bit.mk
+
+# dtbToolCM
+PRODUCT_PACKAGES += \
+    dtbToolCM
