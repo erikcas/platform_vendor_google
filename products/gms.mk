@@ -1,6 +1,6 @@
 # version
-ROM_BUILDTYPE := HOMEMADE
-ROM_VERSION := $(TARGET_PRODUCT)-$(shell date -u +%Y%m%d)-$(PLATFORM_VERSION)-$(BUILD_ID)-$(ROM_BUILDTYPE)
+#ROM_BUILDTYPE := HOMEMADE
+#ROM_VERSION := $(TARGET_PRODUCT)-$(shell date -u +%Y%m%d)-$(PLATFORM_VERSION)-$(BUILD_ID)-$(ROM_BUILDTYPE)
 
 # bootanimation (480 DPI)
 ifneq ($(filter aosp_c6903 aosp_d6503 aosp_d6603 aosp_e6653 aosp_e6853, $(TARGET_PRODUCT)),)
@@ -10,9 +10,9 @@ PRODUCT_COPY_FILES +=  \
 
 endif
 
-include vendor/google/32bit/32bit.mk
-include vendor/google/64bit/64bit.mk
+#include vendor/google/32bit/32bit.mk
+#include vendor/google/64bit/64bit.mk
 
 # dtbToolCM
-PRODUCT_PACKAGES += \
-    dtbToolCM
+#PRODUCT_PACKAGES += \
+#    dtbToolCM
