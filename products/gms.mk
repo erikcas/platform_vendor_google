@@ -7,7 +7,10 @@ ifneq ($(filter aosp_c6903 aosp_d6503 aosp_d6603 aosp_e6653 aosp_e6853, $(TARGET
 
 PRODUCT_COPY_FILES +=  \
     vendor/google/prebuilt/common/bootanimation/480/bootanimation.zip:system/media/bootanimation.zip
+endif
 
+ifneq ($(BOARD_CUSTOM_MKBOOTIMG),)
+BOARD_CUSTOM_BOOTIMG_MK := $(BOARD_CUSTOM_MKBOOTIMG)
 endif
 
 # Chromium Prebuilt
