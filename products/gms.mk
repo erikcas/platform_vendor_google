@@ -4,10 +4,8 @@
 
 # bootanimation (480 DPI)
 ifneq ($(filter aosp_c6903 aosp_d6503 aosp_d6603 aosp_e6653 aosp_e6853, $(TARGET_PRODUCT)),)
-
 PRODUCT_COPY_FILES +=  \
     vendor/google/prebuilt/common/bootanimation/480/bootanimation.zip:system/media/bootanimation.zip
-
 endif
 
 #include vendor/google/32bit/32bit.mk
